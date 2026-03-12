@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mario N. Kamel — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Mario N. Kamel — Software Engineer specializing in .NET backend development and modern web technologies."
+    />
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ================================
+       NAVBAR
+  ================================= -->
+    <nav id="navbar" class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#hero">MN.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon nav-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-1">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================================
+       HERO
+  ================================= -->
+    <section id="hero">
+      <div class="hero-gradient"></div>
+      <div class="hero-grid"></div>
+      <canvas
+        id="hero-canvas"
+        style="
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 0;
+          pointer-events: none;
+        "
+      ></canvas>
+
+      <div class="container hero-content">
+        <span class="hero-badge">
+          <span class="dot"></span>
+          Available for opportunities
+        </span>
+
+        <h1 class="hero-name">Mario N. Kamel</h1>
+
+        <div class="hero-title-wrap">
+          <span id="typing-text"></span><span class="cursor"></span>
+        </div>
+
+        <p class="hero-desc">
+          Passionate software engineering student building robust, scalable
+          backend systems with .NET — turning complex ideas into clean,
+          performant code.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary-custom" id="hero-cta-projects">
+            <i class="bi bi-grid-1x2"></i> View Projects
+          </a>
+          <a href="#contact" class="btn-outline-custom" id="hero-cta-contact">
+            <i class="bi bi-send"></i> Get in Touch
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <svg
+          width="16"
+          height="20"
+          viewBox="0 0 16 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 1v18M1 13l7 7 7-7"
+            stroke="#9ca3af"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ================================
+       ABOUT
+  ================================= -->
+    <section id="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal">
+            <span class="section-label">// about me</span>
+            <h2 class="section-title">
+              Building the Backend<br />That Powers the Future
+            </h2>
+            <p
+              style="
+                color: var(--text-secondary);
+                margin-bottom: 20px;
+                line-height: 1.8;
+              "
+            >
+              I'm a Computer Science student at the Modern Academy for
+              Engineering and Technology in Cairo, with a deep passion for
+              backend development. From designing RESTful APIs to wiring up
+              clean architectures — I love the craft of building things that
+              <em>just work</em>.
+            </p>
+            <p style="color: var(--text-muted); line-height: 1.8">
+              I've honed my skills through hands-on training at Egypt's DEPI
+              initiative and WE Telecom, working with ASP.NET Core, Entity
+              Framework, SQL Server, and modern development practices like SOLID
+              principles and Clean Architecture.
+            </p>
+            <div class="mt-4">
+              <a
+                href="#contact"
+                class="btn-primary-custom me-3"
+                id="about-contact-btn"
+              >
+                <i class="bi bi-envelope"></i> Contact Me
+              </a>
+              <a
+                href="MarioNagyResume.pdf"
+                target="_blank"
+                class="btn-outline-custom"
+                id="about-resume-btn"
+              >
+                <i class="bi bi-file-earmark-person"></i> View Resume
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 reveal" data-delay="150">
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="about-stat-box">
+                  <span class="stat-value">3+</span>
+                  <span class="stat-label">Years of Coding</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="about-stat-box">
+                  <span class="stat-value">5+</span>
+                  <span class="stat-label">Projects Built</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="about-stat-box">
+                  <span class="stat-value">.NET</span>
+                  <span class="stat-label">Main Stack</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="about-stat-box">
+                  <span class="stat-value">CS</span>
+                  <span class="stat-label">B.S. Degree</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+       SKILLS
+  ================================= -->
+    <section id="skills">
+      <div class="container">
+        <span class="section-label reveal">// technical skills</span>
+        <h2 class="section-title reveal">My Toolbox</h2>
+        <p class="section-sub reveal">
+          Technologies and tools I use to craft great software.
+        </p>
+
+        <div class="row g-4">
+          <!-- Languages -->
+          <div class="col-md-6 col-lg-4 reveal" data-delay="0">
+            <div class="glass-card h-100">
+              <div class="skill-category-title">
+                <i class="bi bi-code-slash me-2"></i>Languages
+              </div>
+              <div class="skill-pills-wrap">
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>C#</span
+                >
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>JavaScript</span
+                >
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>Python</span
+                >
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>SQL</span
+                >
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>HTML</span
+                >
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>CSS</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Frameworks & Libraries -->
+          <div class="col-md-6 col-lg-4 reveal" data-delay="100">
+            <div class="glass-card h-100">
+              <div class="skill-category-title">
+                <i class="bi bi-layers me-2"></i>Frameworks & Libraries
+              </div>
+              <div class="skill-pills-wrap">
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>ASP.NET Core</span
+                >
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>Entity Framework
+                  Core</span
+                >
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>LINQ</span
+                >
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>Bootstrap</span
+                >
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>jQuery</span
+                >
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>REST APIs</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Concepts & Tools -->
+          <div class="col-md-6 col-lg-4 reveal" data-delay="200">
+            <div class="glass-card h-100">
+              <div class="skill-category-title">
+                <i class="bi bi-gear me-2"></i>Tools & Concepts
+              </div>
+              <div class="skill-pills-wrap">
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>Clean Architecture</span
+                >
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>SOLID Principles</span
+                >
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>Design Patterns</span
+                >
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>SQL Server</span
+                >
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>Git & GitHub</span
+                >
+                <span class="skill-pill"
+                  ><span class="skill-icon-dot"></span>OOP</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+       EXPERIENCE
+  ================================= -->
+    <section id="experience">
+      <div class="container">
+        <span class="section-label reveal">// experience</span>
+        <h2 class="section-title reveal">Professional Journey</h2>
+        <p class="section-sub reveal">
+          Real-world training and internships that sharpened my skills.
+        </p>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="exp-timeline">
+              <!-- DEPI -->
+              <div class="exp-item reveal" data-delay="0">
+                <div class="glass-card">
+                  <span class="exp-period">2024 — 2025</span>
+                  <div class="exp-company">
+                    <i class="bi bi-building me-1"></i>DEPI — Digital Egypt
+                    Pioneers Initiative
+                  </div>
+                  <div class="exp-role">Backend .NET Developer Trainee</div>
+                  <div class="exp-desc">
+                    Completed an intensive training program under Egypt's
+                    national digital transformation initiative. Developed
+                    backend systems using ASP.NET Core with real-world project
+                    assignments, reinforcing Clean Architecture, dependency
+                    injection, and EF Core for database management.
+                  </div>
+                  <div class="mt-3">
+                    <span class="exp-tag">ASP.NET Core</span>
+                    <span class="exp-tag">Entity Framework</span>
+                    <span class="exp-tag">SQL Server</span>
+                    <span class="exp-tag">C#</span>
+                    <span class="exp-tag">Clean Architecture</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- WE Telecom -->
+              <div class="exp-item reveal" data-delay="120">
+                <div class="glass-card">
+                  <span class="exp-period">2024</span>
+                  <div class="exp-company">
+                    <i class="bi bi-building me-1"></i>WE Telecom — Telecom
+                    Egypt
+                  </div>
+                  <div class="exp-role">Software Engineering Intern</div>
+                  <div class="exp-desc">
+                    Practical training at Egypt's state-owned telecommunications
+                    provider. Gained exposure to enterprise software workflows,
+                    team collaboration, and applying engineering best practices
+                    in a professional corporate environment.
+                  </div>
+                  <div class="mt-3">
+                    <span class="exp-tag">Enterprise Systems</span>
+                    <span class="exp-tag">Software Engineering</span>
+                    <span class="exp-tag">Team Collaboration</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+       PROJECTS
+  ================================= -->
+    <section id="projects">
+      <div class="container">
+        <span class="section-label reveal">// projects</span>
+        <h2 class="section-title reveal">Things I've Built</h2>
+        <p class="section-sub reveal">
+          Personal and academic projects showcasing my backend expertise.
+        </p>
+
+        <div class="row g-4">
+          <!-- LMS -->
+          <div class="col-md-6 col-lg-4 d-flex reveal" data-delay="0">
+            <div class="project-card w-100">
+              <div class="project-icon">📚</div>
+              <div class="project-title">Learning Management System (LMS)</div>
+              <p class="project-desc">
+                A fully-featured LMS built with ASP.NET Core and Clean
+                Architecture. Supports student enrollment, course management,
+                content delivery, and instructor workflows. Implements SOLID
+                principles and layered separation of concerns for
+                maintainability and scalability.
+              </p>
+              <div>
+                <span class="project-tag">ASP.NET Core</span>
+                <span class="project-tag">EF Core</span>
+                <span class="project-tag">SQL Server</span>
+                <span class="project-tag">Clean Arch</span>
+                <span class="project-tag">C#</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tagom CRM -->
+          <div class="col-md-6 col-lg-4 d-flex reveal" data-delay="120">
+            <div class="project-card w-100">
+              <div class="project-icon">🏢</div>
+              <div class="project-title">Tagom CRM System</div>
+              <p class="project-desc">
+                A Customer Relationship Management (CRM) system designed for
+                property and real estate management. Handles client data,
+                property listings, lead tracking, and agent workflows. Built
+                with a robust .NET backend and relational database design.
+              </p>
+              <div>
+                <span class="project-tag">ASP.NET Core</span>
+                <span class="project-tag">SQL Server</span>
+                <span class="project-tag">REST API</span>
+                <span class="project-tag">LINQ</span>
+                <span class="project-tag">C#</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gym Management System -->
+          <div class="col-md-6 col-lg-4 d-flex reveal" data-delay="240">
+            <div class="project-card w-100">
+              <div class="project-icon">🏋️</div>
+              <div class="project-title">Gym Management System</div>
+              <p class="project-desc">
+                Backend system for managing gym members, subscription plans, and
+                active memberships. Enforces single active subscription per
+                member, tracks renewal dates, and provides staff with member
+                management capabilities via a clean RESTful API.
+              </p>
+              <div>
+                <span class="project-tag">ASP.NET Core</span>
+                <span class="project-tag">EF Core</span>
+                <span class="project-tag">SQL Server</span>
+                <span class="project-tag">Clean Arch</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+       EDUCATION
+  ================================= -->
+    <section id="education">
+      <div class="container">
+        <span class="section-label reveal">// education</span>
+        <h2 class="section-title reveal">Academic Background</h2>
+        <p class="section-sub reveal">
+          Where my passion for software engineering was born.
+        </p>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-7 reveal" data-delay="0">
+            <div class="glass-card">
+              <div class="edu-card">
+                <div class="edu-icon">🎓</div>
+                <div>
+                  <div class="edu-degree">
+                    Bachelor of Science in Computer Science
+                  </div>
+                  <div class="edu-school">
+                    Modern Academy for Engineering and Technology
+                  </div>
+                  <div class="edu-period">
+                    Cairo, Egypt · Expected Graduation: 2025
+                  </div>
+                  <span class="edu-grade">Department of Computer Science</span>
+                </div>
+              </div>
+              <div
+                style="
+                  margin-top: 24px;
+                  padding-top: 20px;
+                  border-top: 1px solid var(--border);
+                "
+              >
+                <div class="skill-category-title mb-3">
+                  <i class="bi bi-book me-2"></i>Relevant Coursework
+                </div>
+                <div>
+                  <span class="skill-pill"
+                    ><span class="skill-icon-dot"></span>Data Structures</span
+                  >
+                  <span class="skill-pill"
+                    ><span class="skill-icon-dot"></span>Algorithms</span
+                  >
+                  <span class="skill-pill"
+                    ><span class="skill-icon-dot"></span>OOP</span
+                  >
+                  <span class="skill-pill"
+                    ><span class="skill-icon-dot"></span>Database Systems</span
+                  >
+                  <span class="skill-pill"
+                    ><span class="skill-icon-dot"></span>Software
+                    Engineering</span
+                  >
+                  <span class="skill-pill"
+                    ><span class="skill-icon-dot"></span>Operating Systems</span
+                  >
+                  <span class="skill-pill"
+                    ><span class="skill-icon-dot"></span>Computer Networks</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+       CONTACT
+  ================================= -->
+    <section id="contact">
+      <div class="container">
+        <span class="section-label reveal">// contact</span>
+        <h2 class="section-title reveal">Let's Connect</h2>
+        <p class="section-sub reveal">
+          Have a project idea or an opportunity? I'd love to hear from you.
+        </p>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6 reveal">
+            <a
+              href="mailto:marionagykamel@gmail.com"
+              class="contact-link"
+              id="contact-email"
+            >
+              <div class="contact-link-icon">
+                <i class="bi bi-envelope-fill text-white"></i>
+              </div>
+              <div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-muted);
+                    margin-bottom: 2px;
+                  "
+                >
+                  Email
+                </div>
+                <div>marionagykamel@gmail.com</div>
+              </div>
+              <i class="bi bi-arrow-right contact-link-arrow"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/mario-nagy-760358297/"
+              target="_blank"
+              rel="noopener"
+              class="contact-link"
+              id="contact-linkedin"
+            >
+              <div class="contact-link-icon">
+                <i class="bi bi-linkedin text-white"></i>
+              </div>
+              <div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-muted);
+                    margin-bottom: 2px;
+                  "
+                >
+                  LinkedIn
+                </div>
+                <div>linkedin.com/in/mario-nagy</div>
+              </div>
+              <i class="bi bi-arrow-right contact-link-arrow"></i>
+            </a>
+
+            <a
+              href="https://github.com/MariooX20"
+              target="_blank"
+              rel="noopener"
+              class="contact-link"
+              id="contact-github"
+            >
+              <div
+                class="contact-link-icon"
+                style="background: linear-gradient(135deg, #24292e, #444c56)"
+              >
+                <i class="bi bi-github text-white"></i>
+              </div>
+              <div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-muted);
+                    margin-bottom: 2px;
+                  "
+                >
+                  GitHub
+                </div>
+                <div>github.com/MarioNagy</div>
+              </div>
+              <i class="bi bi-arrow-right contact-link-arrow"></i>
+            </a>
+
+            <a href="tel:+201234567890" class="contact-link" id="contact-phone">
+              <div
+                class="contact-link-icon"
+                style="background: linear-gradient(135deg, #059669, #10b981)"
+              >
+                <i class="bi bi-telephone-fill text-white"></i>
+              </div>
+              <div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-muted);
+                    margin-bottom: 2px;
+                  "
+                >
+                  Phone
+                </div>
+                <div>+20 15 5506 7502</div>
+              </div>
+              <i class="bi bi-arrow-right contact-link-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+       FOOTER
+  ================================= -->
+    <footer>
+      <div class="container">
+        <p>
+          Designed & Built by <strong>Mario N. Kamel</strong> &nbsp;·&nbsp; ©
+          2025
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
